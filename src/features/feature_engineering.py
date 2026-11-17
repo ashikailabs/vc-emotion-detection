@@ -79,7 +79,7 @@ def apply_Bow(train_data: pd.DataFrame, test_data: pd.DataFrame, max_features: i
         raise
 
 def save_data(df: pd.DataFrame, file_path: str) -> None:
-    """Save the dataframe to a CSV file.  """
+    """Save the dataframe to a CSV file."""
     try:
         os.makedirs(os.path.dirname(file_path), exist_ok=True)
         df.to_csv(file_path, index=False)
